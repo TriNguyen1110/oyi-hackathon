@@ -1,4 +1,8 @@
-# Own Your Intelligence Hackathon, Sun 2026-09-27, 1:15–5:00pm build window
+# Two hackathons, one project: YC Bitrig (Fri 2026-09-26) and Own Your Intelligence (Sat 2026-09-27, 1:15–5:00pm)
+
+Friday is the rehearsal, Saturday the performance. Same repo, same demo, same teammate; the
+repo improves between them and the README says so. Sunday 09-28 the presentation runs the
+same demo a third time.
 
 **One sentence:** two people, two agents, one shared memory; when A changes a decision, B's
 agent stops mid-task and says so, and only the agents allowed to know, know.
@@ -30,7 +34,7 @@ verifier is the only one who marks `done`. Same board protocol as `hacker-kit`
 - Two Claude Code terminals, each with the Willder MCP configured for its token.
 - Change feed: `memory_changes(sinceSeq)` tool and the `changes_since_last_call` block on
   every tool result (if landed by Fri 09-25) or the fallback (keystone 4: grant → query →
-  revoke → denied) if not. Decide at 1:15pm from `demo/STATUS.md`, not during the build.
+  revoke → denied) if not. Decided THURSDAY 09-25 evening in `demo/STATUS.md`, not during either build.
 - Host data: prefer QM or GBrain content as the shared memory source if their APIs are usable
   in 30 minutes; otherwise `demo/seed.md` (invented project notes).
 

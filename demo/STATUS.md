@@ -1,4 +1,4 @@
-# Status of the real-time slice (Claude COO updates this Fri 2026-09-25 evening)
+# Status of the real-time slice (Claude COO updates this THU 2026-09-25 evening; Bitrig is Fri, OYI is Sat)
 
 - ChangeEvent table + per-org sequence: not started
 - memory_changes tool, check()-filtered: not started
