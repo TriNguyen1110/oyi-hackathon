@@ -1,0 +1,8 @@
+{
+  "hooks": {
+    "SessionStart": [{ "matcher": ".*", "hooks": [{ "type": "command", "command": "node scripts/hooks/session-start.js", "timeout": 20 }] }],
+    "PreCompact":   [{ "matcher": ".*", "hooks": [{ "type": "command", "command": "node scripts/hooks/pre-compact.js", "timeout": 20 }] }],
+    "SessionEnd":   [{ "matcher": ".*", "hooks": [{ "type": "command", "command": "node scripts/hooks/session-end.js", "timeout": 20 }] }],
+    "Stop":         [{ "matcher": ".*", "hooks": [{ "type": "command", "command": "bash scripts/hooks/stop-gate.sh", "timeout": 120 }] }]
+  }
+}
