@@ -1,11 +1,9 @@
-# Lantern shares one memory between two agents, and only the allowed one hears the change.
+# oyi-hackathon — superseded by `lantern`
 
-(Fill on the day: one command, the 60-second recording, the numbers with dates, what is not true yet.)
+This was the event kit for Own Your Intelligence. The build moved to
+`~/Developer/lantern` on 2026-09-23, when the aim changed from a general two-terminal
+shared-memory demo to extending QM specifically. That repo is the one home: the kit
+scaffolding, the strategy, the five beats, the test and the board are all there.
 
-```bash
-bash demo/run.sh a   # terminal A
-bash demo/run.sh b   # terminal B
-```
-
-Not true yet:
-- (list)
+Kept here for history only. `strategy.md` and `CLAUDE.md` in this repo are copies; if they
+disagree with `lantern`, `lantern` is right.
