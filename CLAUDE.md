@@ -1,11 +1,14 @@
-# Two hackathons, one project: YC Bitrig (Fri 2026-09-26) and Own Your Intelligence (Sat 2026-09-27, 1:15–5:00pm)
+# Own Your Intelligence, Sun 2026-09-27, 12:00–18:00 PT (hacking ends 5:00, judging 5:00–5:45)
 
-Friday is the rehearsal, Saturday the performance. Same repo, same demo, same teammate; the
-repo improves between them and the README says so. Sunday 09-28 the presentation runs the
-same demo a third time.
+Dates corrected 2026-09-23: Sep 26 is a **Saturday** and Sep 27 a **Sunday**. Bitrig Hacks
+(Sat 09-26) is "iPhone 18 Edition", a native-Apple build day — a different theme with nothing
+to rehearse for this. Treat Saturday as the dry-run day for Sunday, not as a first
+performance. Monday 09-28 the presentation runs the same demo again.
 
-**One sentence:** two people, two agents, one shared memory; when A changes a decision, B's
-agent stops mid-task and says so, and only the agents allowed to know, know.
+**Aim and sponsor reading: `strategy.md`. Read it before `plan.md`.**
+
+**One sentence:** QM keeps rooms apart; we let one decision cross, to exactly the agents
+allowed to hear it, in real time, and show the crossing on the record.
 
 Loop: plan → test → implement → review → verify → remember. Backend implements, frontend shows,
 verifier is the only one who marks `done`. Same board protocol as `hacker-kit`
@@ -35,16 +38,18 @@ verifier is the only one who marks `done`. Same board protocol as `hacker-kit`
 - Change feed: `memory_changes(sinceSeq)` tool and the `changes_since_last_call` block on
   every tool result (if landed by Fri 09-25) or the fallback (keystone 4: grant → query →
   revoke → denied) if not. Decided THURSDAY 09-25 evening in `demo/STATUS.md`, not during either build.
-- Host data: prefer QM or GBrain content as the shared memory source if their APIs are usable
-  in 30 minutes; otherwise `demo/seed.md` (invented project notes).
+- **QM is the host to extend, not an optional garnish** (`strategy.md`): two QM rooms, one
+  governed Willder scope between them. QM must be running locally before Sunday or the
+  fallback applies. GBrain as the reading assistant only if its API costs under 30 minutes.
+  Seed content is `demo/seed.md` if no host content is usable.
 
 ## Timeboxes (hard)
 
 | Time | Step | Output |
 |---|---|---|
-| 1:15–1:35 | Plan | `plan.md` committed: objective, files, risks, cut order |
-| 1:35–2:00 | Test | `tests/demo-path.test.*` failing: A writes, B's next call carries the change; B revoked, B's next call carries nothing |
-| 2:00–3:30 | Implement | demo path green on production; `demo/run.sh` drives both terminals |
+| 12:00–12:20 | Plan | `plan.md` committed: objective, files, risks, cut order |
+| 12:20–1:30 | Test | `tests/demo-path.test.*` failing: A writes, B's next call carries the change; B revoked, B's next call carries nothing |
+| 1:30–3:30 | Implement | demo path green on production; `demo/run.sh` drives both terminals |
 | 3:30–3:50 | Review | verifier, fresh context, on the diff and the recording |
 | 3:50–4:30 | Present | `README.md` first: the sentence, one command, the recording, "not true yet"; 60-s recording in `demo/` |
 | 4:30–5:00 | Buffer | nothing new; fix only what the recording shows |
