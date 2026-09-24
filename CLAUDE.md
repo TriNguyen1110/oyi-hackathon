@@ -37,7 +37,7 @@ verifier is the only one who marks `done`. Same board protocol as `hacker-kit`
 - Two Claude Code terminals, each with the Willder MCP configured for its token.
 - Change feed: `memory_changes(sinceSeq)` tool and the `changes_since_last_call` block on
   every tool result (if landed by Fri 09-25) or the fallback (keystone 4: grant → query →
-  revoke → denied) if not. Decided THURSDAY 09-25 evening in `demo/STATUS.md`, not during either build.
+  revoke → denied) if not. Decided FRIDAY 09-25 evening in `demo/STATUS.md`, not on the day.
 - **QM is the host to extend, not an optional garnish** (`strategy.md`): two QM rooms, one
   governed Willder scope between them. QM must be running locally before Sunday or the
   fallback applies. GBrain as the reading assistant only if its API costs under 30 minutes.
